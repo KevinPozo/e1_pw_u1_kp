@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario HTML Ejercicio</title>
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <script src="./js/formulario.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <nav></nav>
+      <section>
+        <div class="formulario">
+          <label for="id-nombre">Nombre:</label>
+          <input type="text" id="id-nombre" placeholder="Ingrese su nombre" />
+          <label for="id-apellido">Apellido:</label>
+          <input type="text" id="id-apellido" placeholder="Ingrese su apellido" />
+          <div class="centrar-boton">
+            <button onclick="agregar()">Agregar</button>
+          </div>
+        </div>
+        <div id="id-tabla">
+          <table border="1px">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+              </tr>
+            </thead>
+            <tbody id="id-elemento">
+                <tr>
+                    <td id="id-nombre-tabla"></td>
+                    <td id="id-apellido-tabla"></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
